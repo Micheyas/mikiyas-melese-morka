@@ -164,6 +164,13 @@ body {
 }
 .about-text strong { color: var(--gold); }
 
+.about-photo-wrap { text-align: center; margin: 6px 0 30px; }
+.about-photo {
+  width: 172px; height: 172px; border-radius: 50%; object-fit: cover;
+  border: 3px solid var(--gold);
+  box-shadow: 0 0 44px rgba(226, 201, 126, 0.35);
+}
+
 .about-stats {
   display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
   margin-top: 38px;
