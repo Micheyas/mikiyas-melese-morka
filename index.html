@@ -31,14 +31,19 @@
 </head>
 <body>
 
+<div class="site-lang" role="group" aria-label="Site language">
+  <button type="button" class="lang-btn active" data-lang="en">EN</button>
+  <button type="button" class="lang-btn" data-lang="am">አማ</button>
+</div>
+
 <header class="hero">
   <div class="hero-inner">
-    <p class="hero-kicker">✦ Web Developer · Addis Ababa, Ethiopia ✦</p>
+    <p class="hero-kicker" data-i18n="kicker">✦ Web Developer · Addis Ababa, Ethiopia ✦</p>
     <h1>Mikiyas Melese <span class="gold">Morka</span></h1>
-    <p class="hero-tagline">I build complete web systems — hotel booking platforms, school management tools, and restaurant websites — designed, engineered, and deployed end to end.</p>
+    <p class="hero-tagline" data-i18n="tagline">I build complete web systems — hotel booking platforms, school management tools, and restaurant websites — designed, engineered, and deployed end to end.</p>
     <div class="hero-actions">
-      <a class="btn btn-gold" href="#projects">View My Work</a>
-      <a class="btn btn-ghost" href="#contact">Contact Me</a>
+      <a class="btn btn-gold" href="#projects" data-i18n="viewWork">View My Work</a>
+      <a class="btn btn-ghost" href="#contact" data-i18n="contactMe">Contact Me</a>
     </div>
   </div>
   <div class="hero-glow"></div>
@@ -46,82 +51,82 @@
 
 <main>
   <section id="projects" class="section">
-    <h2 class="section-title">Selected <span class="gold">Work</span></h2>
-    <p class="section-sub">Live products, designed and built by me. Click through and try them.</p>
+    <h2 class="section-title" data-i18n="tProjects">Selected <span class="gold">Work</span></h2>
+    <p class="section-sub" data-i18n="subProjects">Live products, designed and built by me. Click through and try them.</p>
 
     <div class="projects">
       <article class="project-card">
-        <div class="project-shot"><img src="images/hotel.jpg" alt="Hotel booking system rooms page" loading="lazy" /></div>
+        <div class="project-shot"><img src="images/hotel.jpg" alt="Hotel booking system rooms page" data-i18n-alt="altHotel" loading="lazy" /></div>
         <div class="project-body">
-          <h3>Hotel Booking System</h3>
-          <p class="project-brand">2RN Solomon · Bilingual English / Amharic</p>
-          <p>Full-stack reservation platform: 23 rooms, online booking with KYC verification, loyalty discounts, live multi-currency pricing, and a complete staff portal (admin, manager, receptionist, IT roles).</p>
+          <h3 data-i18n="p1t">Hotel Booking System</h3>
+          <p class="project-brand" data-i18n="p1b">2RN Solomon · Bilingual English / Amharic</p>
+          <p data-i18n="p1d">Full-stack reservation platform: 23 rooms, online booking with KYC verification, loyalty discounts, live multi-currency pricing, and a complete staff portal (admin, manager, receptionist, IT roles).</p>
           <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span></div>
-          <a class="btn btn-gold btn-sm" href="https://hotel-boking-sistem.vercel.app" target="_blank" rel="noopener">Open Live Demo →</a>
+          <a class="btn btn-gold btn-sm" href="https://hotel-boking-sistem.vercel.app" target="_blank" rel="noopener" data-i18n="demoBtn">Open Live Demo →</a>
         </div>
       </article>
 
       <article class="project-card">
-        <div class="project-shot"><img src="images/school.jpg" alt="School management system homepage" loading="lazy" /></div>
+        <div class="project-shot"><img src="images/school.jpg" alt="School management system homepage" data-i18n-alt="altSchool" loading="lazy" /></div>
         <div class="project-body">
-          <h3>School Management System</h3>
-          <p class="project-brand">Admissions · Academics · Finance</p>
-          <p>Campus platform with 44 pages: student records, timetables, and a full fee module — fee structures, invoice generation, payments with printable receipts, and a parent self-service portal.</p>
+          <h3 data-i18n="p2t">School Management System</h3>
+          <p class="project-brand" data-i18n="p2b">Admissions · Academics · Finance</p>
+          <p data-i18n="p2d">Campus platform with 44 pages: student records, timetables, and a full fee module — fee structures, invoice generation, payments with printable receipts, and a parent self-service portal.</p>
           <div class="tags"><span>Next.js</span><span>Supabase</span><span>PostgreSQL</span></div>
-          <a class="btn btn-gold btn-sm" href="https://school-management-system-micheyas-projects.vercel.app" target="_blank" rel="noopener">Open Live Demo →</a>
+          <a class="btn btn-gold btn-sm" href="https://school-management-system-micheyas-projects.vercel.app" target="_blank" rel="noopener" data-i18n="demoBtn">Open Live Demo →</a>
         </div>
       </article>
 
       <article class="project-card">
-        <div class="project-shot"><img src="images/sakura.jpg" alt="Sakura Japanese restaurant website" loading="lazy" /></div>
+        <div class="project-shot"><img src="images/sakura.jpg" alt="Sakura Japanese restaurant website" data-i18n-alt="altSakura" loading="lazy" /></div>
         <div class="project-body">
-          <h3>Sakura Japanese Restaurant</h3>
-          <p class="project-brand">Restaurant website · Bole, Addis Ababa</p>
-          <p>Elegant one-page site for a Japanese restaurant: animated menu with dish photography, falling sakura petals, and a private admin panel where staff add, edit, and reprice dishes instantly.</p>
+          <h3 data-i18n="p3t">Sakura Japanese Restaurant</h3>
+          <p class="project-brand" data-i18n="p3b">Restaurant website · Bole, Addis Ababa</p>
+          <p data-i18n="p3d">Elegant one-page site for a Japanese restaurant: animated menu with dish photography, falling sakura petals, and a private admin panel where staff add, edit, and reprice dishes instantly.</p>
           <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="btn btn-gold btn-sm" href="https://sakura-japanese-restaurant.vercel.app" target="_blank" rel="noopener">Open Live Demo →</a>
+          <a class="btn btn-gold btn-sm" href="https://sakura-japanese-restaurant.vercel.app" target="_blank" rel="noopener" data-i18n="demoBtn">Open Live Demo →</a>
         </div>
       </article>
 
       <article class="project-card">
         <div class="project-shot project-shot-icon"><span>🍕</span></div>
         <div class="project-body">
-          <h3>Antica Bar &amp; Restaurant</h3>
-          <p class="project-brand">Italian pizzeria &amp; bar · Bole Road, Addis Ababa</p>
-          <p>Sunlit trattoria website with a 30-dish trilingual menu (English / Amharic), a desserts tab, and a private admin panel where staff add, edit, and reprice dishes instantly.</p>
+          <h3 data-i18n="p4t">Antica Bar &amp; Restaurant</h3>
+          <p class="project-brand" data-i18n="p4b">Italian pizzeria &amp; bar · Bole Road, Addis Ababa</p>
+          <p data-i18n="p4d">Sunlit trattoria website with a 30-dish trilingual menu (English / Amharic), a desserts tab, and a private admin panel where staff add, edit, and reprice dishes instantly.</p>
           <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="btn btn-gold btn-sm" href="https://antica-bar-restaurant.vercel.app" target="_blank" rel="noopener">Open Live Demo →</a>
+          <a class="btn btn-gold btn-sm" href="https://antica-bar-restaurant.vercel.app" target="_blank" rel="noopener" data-i18n="demoBtn">Open Live Demo →</a>
         </div>
       </article>
 
       <article class="project-card">
         <div class="project-shot project-shot-icon"><span>💬</span></div>
         <div class="project-body">
-          <h3>Wegram — Chat App</h3>
-          <p class="project-brand">Real-time messaging</p>
-          <p>Full-stack chat application with instant messaging, file uploads, and persistent history — built with a Node.js backend and live database.</p>
+          <h3 data-i18n="p5t">Wegram — Chat App</h3>
+          <p class="project-brand" data-i18n="p5b">Real-time messaging</p>
+          <p data-i18n="p5d">Full-stack chat application with instant messaging, file uploads, and persistent history — built with a Node.js backend and live database.</p>
           <div class="tags"><span>JavaScript</span><span>Node.js</span><span>PostgreSQL</span><span>Real-time</span></div>
-          <a class="btn btn-gold btn-sm" href="https://chat-app-one-kappa.vercel.app" target="_blank" rel="noopener">Open Live Demo →</a>
+          <a class="btn btn-gold btn-sm" href="https://chat-app-one-kappa.vercel.app" target="_blank" rel="noopener" data-i18n="demoBtn">Open Live Demo →</a>
         </div>
       </article>
 
       <article class="project-card">
-        <div class="project-shot"><img src="images/store.jpg" alt="StoreMS store management system" loading="lazy" /></div>
+        <div class="project-shot"><img src="images/store.jpg" alt="StoreMS store management system" data-i18n-alt="altStore" loading="lazy" /></div>
         <div class="project-body">
-          <h3>StoreMS — Store Management</h3>
-          <p class="project-brand">Inventory · Sales · Stock control</p>
-          <p>Complete store management system for tracking inventory, sales, and stock — everything a small retail business needs to stay organized.</p>
+          <h3 data-i18n="p6t">StoreMS — Store Management</h3>
+          <p class="project-brand" data-i18n="p6b">Inventory · Sales · Stock control</p>
+          <p data-i18n="p6d">Complete store management system for tracking inventory, sales, and stock — everything a small retail business needs to stay organized.</p>
           <div class="tags"><span>JavaScript</span><span>React</span></div>
-          <a class="btn btn-gold btn-sm" href="https://store-managment-nine.vercel.app" target="_blank" rel="noopener">Open Live Demo →</a>
+          <a class="btn btn-gold btn-sm" href="https://store-managment-nine.vercel.app" target="_blank" rel="noopener" data-i18n="demoBtn">Open Live Demo →</a>
         </div>
       </article>
 
       <article class="project-card">
         <div class="project-shot project-shot-icon"><span>📚</span></div>
         <div class="project-body">
-          <h3>StudyApp — AI Study Assistant</h3>
-          <p class="project-brand">AI-powered learning backend</p>
-          <p>Backend API that turns study materials into an AI tutor — ask questions and get explanations powered by Anthropic's AI, built as a clean REST service.</p>
+          <h3 data-i18n="p7t">StudyApp — AI Study Assistant</h3>
+          <p class="project-brand" data-i18n="p7b">AI-powered learning backend</p>
+          <p data-i18n="p7d">Backend API that turns study materials into an AI tutor — ask questions and get explanations powered by Anthropic's AI, built as a clean REST service.</p>
           <div class="tags"><span>Node.js</span><span>Express</span><span>Anthropic AI</span><span>REST API</span></div>
         </div>
       </article>
@@ -129,9 +134,9 @@
       <article class="project-card">
         <div class="project-shot project-shot-icon"><span>🤖</span></div>
         <div class="project-body">
-          <h3>YOTOD — AI Desktop Assistant</h3>
-          <p class="project-brand">Voice-controlled PC companion</p>
-          <p>Fully autonomous desktop AI: real-time voice conversation, screen understanding, computer control, and a plug-and-play plugin system — all running locally on your PC.</p>
+          <h3 data-i18n="p8t">YOTOD — AI Desktop Assistant</h3>
+          <p class="project-brand" data-i18n="p8b">Voice-controlled PC companion</p>
+          <p data-i18n="p8d">Fully autonomous desktop AI: real-time voice conversation, screen understanding, computer control, and a plug-and-play plugin system — all running locally on your PC.</p>
           <div class="tags"><span>Python</span><span>PyQt6</span><span>Gemini Live</span></div>
         </div>
       </article>
@@ -139,29 +144,25 @@
   </section>
 
   <section id="skills" class="section">
-    <h2 class="section-title">What I <span class="gold">Work With</span></h2>
+    <h2 class="section-title" data-i18n="tSkills">What I <span class="gold">Work With</span></h2>
     <div class="skills">
       <span>JavaScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Supabase</span><span>HTML &amp; CSS</span><span>REST APIs</span><span>Git &amp; GitHub</span><span>Vercel</span><span>Render</span>
     </div>
   </section>
 
   <section id="about" class="section">
-    <h2 class="section-title">About <span class="gold">Me</span></h2>
-    <div class="lang-toggle" role="group" aria-label="About section language">
-      <button type="button" class="lang-btn active" data-lang="en">EN</button>
-      <button type="button" class="lang-btn" data-lang="am">አማ</button>
-    </div>
+    <h2 class="section-title" data-i18n="tAbout">About <span class="gold">Me</span></h2>
     <p class="about-text" data-about="en">I'm <strong>Mikiyas Melese Morka</strong>, a Web Developer based in Addis Ababa, Ethiopia. I take projects from idea to live product: design, frontend, backend, database, and deployment — one person with full ownership, nothing lost between handoffs. My focus is practical software for real businesses — booking systems, management tools, and websites that bring in customers. If it can be built, I can build it. You work directly with the developer, in Amharic or English, and we agree on the price together before anything starts.</p>
     <p class="about-text" data-about="am" lang="am" hidden>እኔ <strong>ሚኪያስ መለሰ ሞርቃ</strong> ነኝ — በአዲስ አበባ የምሰራ የድር ገንቢ ነኝ። ፕሮጀክትን ከሀሳብ እስከ ዝግጁ ምርት እወስዳለሁ፦ ዲዛይን፣ frontend፣ backend፣ ዳታቤዝ እና deployment — አንድ ሰው ሙሉ ኃላፊነት ይዞ፣ ምንም ሳይጠፋ። ትኩረቴ ለእውን ንግዶች የሚሆን ተግባራዊ ሶፍትዌር ነው፦ የማስያዝ ስርዓቶች፣ የማኔጅመንት መሳሪያዎች እና ደንበኛ የሚያመጡ ድረ-ገጾች። የሚሰራ ከሆነ፣ እኔ መስራት እችላለሁ። በቀጥታ ከገንቢው ጋር ይሰራሉ — በአማርኛ ወይም በእንግሊዝኛ — ዋጋውንም ከመጀመራችን በፊት አብረን እንስማማለን።</p>
   </section>
 
   <section id="contact" class="section">
-    <h2 class="section-title">Get In <span class="gold">Touch</span></h2>
-    <p class="section-sub">Have a project in mind? Let's talk.</p>
+    <h2 class="section-title" data-i18n="tContact">Get In <span class="gold">Touch</span></h2>
+    <p class="section-sub" data-i18n="subContact">Have a project in mind? Let's talk.</p>
     <div class="contact-cards">
-      <a class="contact-card" href="tel:+251995111015"><span class="contact-icon">📞</span><span class="contact-label">Call</span><span class="contact-value">+251 99 511 1015</span></a>
+      <a class="contact-card" href="tel:+251995111015"><span class="contact-icon">📞</span><span class="contact-label" data-i18n="labelCall">Call</span><span class="contact-value">+251 99 511 1015</span></a>
       <a class="contact-card" href="https://wa.me/251995111015" target="_blank" rel="noopener"><span class="contact-icon">💬</span><span class="contact-label">WhatsApp</span><span class="contact-value">+251 99 511 1015</span></a>
-      <a class="contact-card" href="mailto:Mikiyasmelese336@gmail.com"><span class="contact-icon">✉️</span><span class="contact-label">Email</span><span class="contact-value">Mikiyasmelese336@gmail.com</span></a>
+      <a class="contact-card" href="mailto:Mikiyasmelese336@gmail.com"><span class="contact-icon">✉️</span><span class="contact-label" data-i18n="labelEmail">Email</span><span class="contact-value">Mikiyasmelese336@gmail.com</span></a>
       <a class="contact-card" href="https://github.com/Micheyas" target="_blank" rel="noopener"><span class="contact-icon">💻</span><span class="contact-label">GitHub</span><span class="contact-value">@Micheyas</span></a>
       <a class="contact-card" href="https://www.linkedin.com/in/mikiyas-melese-672876443" target="_blank" rel="noopener"><span class="contact-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span><span class="contact-label">LinkedIn</span><span class="contact-value">mikiyas Melese</span></a>
     </div>
@@ -169,22 +170,129 @@
 </main>
 
 <footer>
-  <p>© 2026 <strong>Mikiyas Melese Morka</strong> · Web Developer · Addis Ababa, Ethiopia</p>
+  <p data-i18n="footer">© 2026 <strong>Mikiyas Melese Morka</strong> · Web Developer · Addis Ababa, Ethiopia</p>
 </footer>
 
 <script>
 (function () {
-  var KEY = 'mm-portfolio-about-lang';
-  var btns = document.querySelectorAll('.lang-btn');
-  var paras = document.querySelectorAll('[data-about]');
+  var KEY = 'mm-portfolio-lang';
+  var STR = {
+    en: {
+      docTitle: "Mikiyas Melese Morka — Web Developer in Addis Ababa",
+      kicker: "✦ Web Developer · Addis Ababa, Ethiopia ✦",
+      tagline: "I build complete web systems — hotel booking platforms, school management tools, and restaurant websites — designed, engineered, and deployed end to end.",
+      viewWork: "View My Work",
+      contactMe: "Contact Me",
+      tProjects: 'Selected <span class="gold">Work</span>',
+      subProjects: "Live products, designed and built by me. Click through and try them.",
+      p1t: "Hotel Booking System",
+      p1b: "2RN Solomon · Bilingual English / Amharic",
+      p1d: "Full-stack reservation platform: 23 rooms, online booking with KYC verification, loyalty discounts, live multi-currency pricing, and a complete staff portal (admin, manager, receptionist, IT roles).",
+      p2t: "School Management System",
+      p2b: "Admissions · Academics · Finance",
+      p2d: "Campus platform with 44 pages: student records, timetables, and a full fee module — fee structures, invoice generation, payments with printable receipts, and a parent self-service portal.",
+      p3t: "Sakura Japanese Restaurant",
+      p3b: "Restaurant website · Bole, Addis Ababa",
+      p3d: "Elegant one-page site for a Japanese restaurant: animated menu with dish photography, falling sakura petals, and a private admin panel where staff add, edit, and reprice dishes instantly.",
+      p4t: "Antica Bar & Restaurant",
+      p4b: "Italian pizzeria & bar · Bole Road, Addis Ababa",
+      p4d: "Sunlit trattoria website with a 30-dish trilingual menu (English / Amharic), a desserts tab, and a private admin panel where staff add, edit, and reprice dishes instantly.",
+      p5t: "Wegram — Chat App",
+      p5b: "Real-time messaging",
+      p5d: "Full-stack chat application with instant messaging, file uploads, and persistent history — built with a Node.js backend and live database.",
+      p6t: "StoreMS — Store Management",
+      p6b: "Inventory · Sales · Stock control",
+      p6d: "Complete store management system for tracking inventory, sales, and stock — everything a small retail business needs to stay organized.",
+      p7t: "StudyApp — AI Study Assistant",
+      p7b: "AI-powered learning backend",
+      p7d: "Backend API that turns study materials into an AI tutor — ask questions and get explanations powered by Anthropic's AI, built as a clean REST service.",
+      p8t: "YOTOD — AI Desktop Assistant",
+      p8b: "Voice-controlled PC companion",
+      p8d: "Fully autonomous desktop AI: real-time voice conversation, screen understanding, computer control, and a plug-and-play plugin system — all running locally on your PC.",
+      demoBtn: "Open Live Demo →",
+      tSkills: 'What I <span class="gold">Work With</span>',
+      tAbout: 'About <span class="gold">Me</span>',
+      tContact: 'Get In <span class="gold">Touch</span>',
+      subContact: "Have a project in mind? Let's talk.",
+      labelCall: "Call",
+      labelEmail: "Email",
+      footer: "© 2026 <strong>Mikiyas Melese Morka</strong> · Web Developer · Addis Ababa, Ethiopia",
+      altHotel: "Hotel booking system rooms page",
+      altSchool: "School management system homepage",
+      altSakura: "Sakura Japanese restaurant website",
+      altStore: "StoreMS store management system"
+    },
+    am: {
+      docTitle: "ሚኪያስ መለሰ ሞርቃ — የድር ገንቢ በአዲስ አበባ",
+      kicker: "✦ የድር ገንቢ · አዲስ አበባ፣ ኢትዮጵያ ✦",
+      tagline: "ሙሉ የድር ስርዓቶችን እገነባለሁ — የሆቴል ማስያዝ መድረኮች፣ የትምህርት ቤት ማኔጅመንት መሳሪያዎች እና የሬስቶራንት ድረ-ገጾች — ከዲዛይን እስከ ማሰማራት ሙሉ በሙሉ በእኔ እጅ።",
+      viewWork: "ስራዎቼን ይመልከቱ",
+      contactMe: "አግኙኝ",
+      tProjects: 'የተመረጡ <span class="gold">ስራዎች</span>',
+      subProjects: "በእኔ የተነደፉና የተገነቡ ቀጥታ ምርቶች። ይክፈቱና ይሞክሩ።",
+      p1t: "የሆቴል ማስያዝ ስርዓት",
+      p1b: "2RN Solomon · በእንግሊዝኛ / አማርኛ",
+      p1d: "ሙሉ የማስያዝ መድረክ፦ 23 ክፍሎች፣ በመስመር ላይ ማስያዝ ከKYC ማረጋገጫ ጋር፣ የታማኝነት ቅናሾች፣ ቀጥታ የብዙ-ምንዛሬ ዋጋ እና ሙሉ የሰራተኞች ፖርታል (አድሚን፣ ሥራ አስኪያጅ፣ ሪሴፕሽኒስት፣ የአይቲ ሚናዎች)።",
+      p2t: "የትምህርት ቤት ማኔጅመንት ስርዓት",
+      p2b: "ምዝገባ · ትምህርት · ፋይናንስ",
+      p2d: "የካምፓስ መድረክ ከ44 ገጾች ጋር፦ የተማሪ መዝገቦች፣ የጊዜ ሰሌዳዎች እና ሙሉ የክፍያ ሞዱል — የክፍያ አወቃቀሮች፣ የደረሰኝ አወጣጥ፣ ክፍያዎች ከሚታተሙ ደረሰኞች ጋር እና የወላጅ ራስ-አገልግሎት ፖርታል።",
+      p3t: "ሳኩራ የጃፓን ሬስቶራንት",
+      p3b: "የሬስቶራንት ድረ-ገጽ · ቦሌ፣ አዲስ አበባ",
+      p3d: "ለጃፓን ሬስቶራንት የተዘጋጀ ውብ የአንድ-ገጽ ድረ-ገጽ፦ ተንቀሳቃሽ ምናሌ ከምግብ ፎቶግራፍ ጋር፣ የሚወድቁ የሳኩራ አበቦች እና ሰራተኞች ምግቦችን ወዲያውኑ የሚጨምሩበት፣ የሚያርሙበትና ዋጋ የሚለውጡበት የግል አድሚን ፓነል።",
+      p4t: "አንቲካ ባር እና ሬስቶራንት",
+      p4b: "የጣሊያን ፒዜሪያ እና ባር · ቦሌ መንገድ፣ አዲስ አበባ",
+      p4d: "የ30-ምግብ ምናሌ (እንግሊዝኛ / አማርኛ) ያለው የትራቶሪያ ድረ-ገጽ፣ የጣፋጭ ምግቦች ትር እና ሰራተኞች ምግቦችን ወዲያውኑ የሚጨምሩበት፣ የሚያርሙበትና ዋጋ የሚለውጡበት የግል አድሚን ፓነል።",
+      p5t: "ዌግራም — የቻት መተግበሪያ",
+      p5b: "የቀጥታ መልእክት",
+      p5d: "ሙሉ የቻት መተግበሪያ፦ ፈጣን መልእክት፣ የፋይል መስቀል እና የሚቀመጥ ታሪክ — በNode.js backend እና በቀጥታ ዳታቤዝ የተገነባ።",
+      p6t: "StoreMS — የሱቅ ማኔጅመንት",
+      p6b: "ክምችት · ሽያጭ · የስቶክ ቁጥጥር",
+      p6d: "የክምችት፣ የሽያጭ እና የስቶክ ክትትል ሙሉ የሱቅ ማኔጅመንት ስርዓት — አንድ ትንሽ የችርቻሮ ንግድ ሥርዓታማ ለመሆን የሚያስፈልገው ሁሉ።",
+      p7t: "StudyApp — የAI የጥናት ረዳት",
+      p7b: "በAI የተደገፈ የመማሪያ backend",
+      p7d: "የጥናት ቁሳቁሶችን ወደ AI አስተማሪ የሚቀይር Backend API — ጥያቄዎችን ይጠይቁ እና በAnthropic AI የተደገፉ ማብራሪያዎችን ያግኙ፣ እንደ ንጹህ REST አገልግሎት የተገነባ።",
+      p8t: "YOTOD — የAI የዴስክቶፕ ረዳት",
+      p8b: "በድምፅ የሚቆጣጠር የPC ጓደኛ",
+      p8d: "ሙሉ በሙሉ ራስ-ገዝ የዴስክቶፕ AI፦ የቀጥታ የድምፅ ውይይት፣ የማያ መረዳት፣ የኮምፒውተር ቁጥጥር እና plug-and-play የፕለጊን ስርዓት — ሁሉም በPCዎ ላይ በአካባቢ የሚሰራ።",
+      demoBtn: "ቀጥታ ማሳያ ክፈት →",
+      tSkills: '<span class="gold">የምሰራባቸው</span> ቴክኖሎጂዎች',
+      tAbout: 'ስለ <span class="gold">እኔ</span>',
+      tContact: '<span class="gold">አግኙኝ</span>',
+      subContact: "ፕሮጀክት በአእምሮዎ አለ? እንነጋገር።",
+      labelCall: "ስልክ",
+      labelEmail: "ኢሜይል",
+      footer: "© 2026 <strong>ሚኪያስ መለሰ ሞርቃ</strong> · የድር ገንቢ · አዲስ አበባ፣ ኢትዮጵያ",
+      altHotel: "የሆቴል ማስያዝ ስርዓት የክፍሎች ገጽ",
+      altSchool: "የትምህርት ቤት ማኔጅመንት ስርዓት መነሻ ገጽ",
+      altSakura: "የሳኩራ የጃፓን ሬስቶራንት ድረ-ገጽ",
+      altStore: "StoreMS የሱቅ ማኔጅመንት ስርዓት"
+    }
+  };
   function setLang(l) {
-    btns.forEach(function (b) { b.classList.toggle('active', b.dataset.lang === l); });
-    paras.forEach(function (p) { p.hidden = p.dataset.about !== l; });
+    var s = STR[l] || STR.en;
+    document.documentElement.lang = l;
+    document.title = s.docTitle;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var v = s[el.getAttribute('data-i18n')];
+      if (v != null) el.innerHTML = v;
+    });
+    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      var v = s[el.getAttribute('data-i18n-alt')];
+      if (v != null) el.setAttribute('alt', v);
+    });
+    document.querySelectorAll('[data-about]').forEach(function (p) {
+      p.hidden = p.getAttribute('data-about') !== l;
+    });
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      b.classList.toggle('active', b.getAttribute('data-lang') === l);
+    });
     try { localStorage.setItem(KEY, l); } catch (e) {}
   }
-  btns.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
+  });
   var saved = null;
-  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  try { saved = localStorage.getItem(KEY) || localStorage.getItem('mm-portfolio-about-lang'); } catch (e) {}
   setLang(saved === 'am' ? 'am' : 'en');
 })();
 </script>
