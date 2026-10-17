@@ -149,6 +149,7 @@ body {
   color: var(--muted); font-size: 1.08rem;
 }
 .about-text strong { color: var(--gold); }
+.about-text + .about-text { margin-top: 1.4rem; }
 
 /* ── Contact ── */
 .contact-cards {
